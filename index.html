@@ -17,7 +17,7 @@
 
       async function subscribe() {
         let sw = await navigator.serviceWorker.ready
-        let push = await sw.pushManager.subscribe({
+        let push = await sw.safari.pushNotification.subscribe({
           userVisibleOnly: true,
           applicationServerKey:
             'BFm2WvnzbJUN-q4DZCjoQOmCjJVlUhySPxLNHAyTTXPpfUZGb5YE2fJwoMnetWkfpS3bB9R_G2eSZbeabdg12ts',
